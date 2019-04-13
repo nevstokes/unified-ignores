@@ -1,0 +1,22 @@
+eslint:
+  - node_modules/
+  - "*.d.ts"
+
+docker:
+  - .env.dist
+  - node_modules
+  - README.md
+
+git:
+  - .*ignore
+  - .env
+  - bin/*.js
+  - lib/*.js
+  - "*.d.ts"
+  - node_modules
+  - outputs/
+  - cdk.context.json
+
+npm:
+  - "*.ts"
+  - !*.d.ts
